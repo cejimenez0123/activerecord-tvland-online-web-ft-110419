@@ -5,6 +5,6 @@ class Character < ActiveRecord::Base
     "#{self.name} always says: #{self.catchphrase}"
   end
   def build_network
-
+    fox = Network.find_or_create_by(call_letters: "Fox")
   end
 end

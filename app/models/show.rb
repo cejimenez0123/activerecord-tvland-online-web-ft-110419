@@ -5,7 +5,6 @@ class Show < ActiveRecord::Base
   has_many :actors, through: :characters
   def actors_list
 
-    "#{self.actors}"
-    binding.pry
+  self.actors.map{|t| t.full_name}
   end
 end

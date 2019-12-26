@@ -7,7 +7,7 @@ class Actor < ActiveRecord::Base
   end
   def list_roles
     "#{self.characters.map(&:name).split} - #{self.shows.map(&:name).split}"
-
+    binding.pry
 
   end
 end

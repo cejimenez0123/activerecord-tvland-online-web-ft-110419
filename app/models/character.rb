@@ -6,5 +6,6 @@ class Character < ActiveRecord::Base
   end
   def build_network
     fox = Network.find_or_create_by(call_letters: "Fox")
+    self.network = fox
   end
 end

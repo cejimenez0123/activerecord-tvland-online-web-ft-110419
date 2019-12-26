@@ -1,4 +1,4 @@
-require_relative "../app/models/actor.rb"
+require_relative "../models/actor.rb"
 class Show < ActiveRecord::Base
   has_many :characters
   belongs_to :network

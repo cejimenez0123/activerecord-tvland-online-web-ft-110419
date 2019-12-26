@@ -6,8 +6,8 @@ class Actor < ActiveRecord::Base
     "#{self.first_name} #{self.last_name}"
   end
   def list_roles
-    self.characters.name
-    binding.pry
+    self.characters.map(&:name)
+
 
   end
 end

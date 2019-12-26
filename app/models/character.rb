@@ -1,3 +1,3 @@
 class Character < ActiveRecord::Base
-  belongs_to :actor, through: :shows
+  belongs_to :actors, through: :shows
 end
